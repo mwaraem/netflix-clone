@@ -706,12 +706,21 @@ video {
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
+.text-gray-200 {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+
 body {
   background-color: #000000;
   font-family: 'Lato', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 @media (min-width: 768px) {
+  .md\:max-w-\[70\%\] {
+    max-width: 70%;
+  }
+
   .md\:p-8 {
     padding: 2rem;
   }
@@ -719,5 +728,22 @@ body {
   .md\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:max-w-\[50\%\] {
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:max-w-\[35\%\] {
+    max-width: 35%;
   }
 }
